@@ -53,7 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#3EC7DA"
-        android:text="Team list"
+        android:text="Team List"
         android:textAllCaps="false"
         android:textSize="16sp"
         android:textStyle="bold" />
