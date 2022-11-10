@@ -64,8 +64,8 @@ public class TeamListActivity extends AppCompatActivity {
         arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, teamList);
         teamListLv.setAdapter(arrayAdapter);
         teamListLv.setOnItemClickListener((adapterView, view, position, l) -> {
-            String memberName = teamList.get(position);
             EditText memberNameTxt = findViewById(R.id.member_name_txt);
+            String memberName = teamList.get(position);
             memberNameTxt.setText(memberName);
             Toast.makeText(this, "Click : " + teamList.get(position), Toast.LENGTH_SHORT).show();
         });
