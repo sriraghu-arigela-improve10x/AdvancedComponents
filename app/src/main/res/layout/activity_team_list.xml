@@ -6,15 +6,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="12dp"
-    tools:context=".TeamActivity">
+    tools:context=".TeamListActivity">
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/textView17"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter Name"
-        android:textColor="#0C0A0A"
+        android:text="Member Name"
+        android:textColor="#090606"
         android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/member_name_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,20 +30,22 @@
         android:layout_marginTop="12dp"
         android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/enter_name_txt"
+        <Button
+            android:id="@+id/delate_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="12dp"
+            android:layout_marginRight="16dp"
             android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName" />
+            android:backgroundTint="#3EC7DA"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/add_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
+            android:layout_marginLeft="16dp"
             android:layout_weight="1"
             android:backgroundTint="#3EC7DA"
             android:text="Add"
@@ -43,15 +53,8 @@
             android:textSize="16sp" />
     </LinearLayout>
 
-    <LinearLayout
+    <ListView
+        android:id="@+id/team_list_lv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="12dp"
-        android:orientation="vertical">
-
-        <Spinner
-            android:id="@+id/team_sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
+        android:layout_height="match_parent" />
 </LinearLayout>
