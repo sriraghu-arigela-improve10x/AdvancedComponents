@@ -18,7 +18,7 @@ public class ContactsActivity extends AppCompatActivity {
 
     public ArrayList<Contact> contactsList;
     public ListView contactsLv;
-    public ArrayAdapter<Contact> arrayAdapter;
+    public ContactsAdapter contactsAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,11 +41,10 @@ public class ContactsActivity extends AppCompatActivity {
         });
     }
 
-
     public void setupContactsListView() {
         contactsLv = findViewById(R.id.contats_lv);
-        arrayAdapter = new ArrayAdapter<Contact>(this, android.R.layout.simple_list_item_1, contactsList);
-
+        contactsAdapter = new ContactsAdapter(this,R.layout.contacts_item, contactsList);
+        contactsLv.setAdapter(contactsAdapter);
     }
 
     public void setupData() {
