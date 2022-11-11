@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#3EC7DA"
     android:orientation="vertical"
     android:padding="12dp"
     tools:context=".HomeActivity">
@@ -54,6 +55,16 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#3EC7DA"
         android:text="Team List"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/contacts_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3EC7DA"
+        android:text="Contacts"
         android:textAllCaps="false"
         android:textSize="16sp"
         android:textStyle="bold" />

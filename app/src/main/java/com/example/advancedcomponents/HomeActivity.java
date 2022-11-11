@@ -18,6 +18,7 @@ public class HomeActivity extends AppCompatActivity {
         handleDateOfBirthBtn();
         handleTeamBtn();
         handleTeamListBtn();
+        handleContactsBtn();
         handleAddMembersBtn();
 
     }
@@ -58,6 +59,14 @@ public class HomeActivity extends AppCompatActivity {
         Button teamListBtn = findViewById(R.id.team_list_btn);
         teamListBtn.setOnClickListener(view -> {
             Intent intent = new Intent(this, TeamListActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    public void handleContactsBtn() {
+        Button contactsBtn = findViewById(R.id.contacts_btn);
+        contactsBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(this, ContactsActivity.class);
             startActivity(intent);
         });
     }
